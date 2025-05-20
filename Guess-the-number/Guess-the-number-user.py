@@ -11,7 +11,7 @@ def guess_num(x):
         else:
             guess = low
         print(f"My guess was {guess}")
-        ask = input("Is it high or low or correct?:")
+        ask = input("Is it high or low or correct?:").lower()
         if ask == "high":
             high = guess - 1
         elif ask == "low":
